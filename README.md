@@ -1,2 +1,4 @@
 # Mapster
-![Mapster Logo](https://bricewa.me/resources/img/logo/icon-small.png =50)
+<img src="https://bricewa.me/resources/img/logo/icon-small.png" width="164">
+
+### Documentation
