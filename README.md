@@ -12,6 +12,7 @@ Mapster is a social networking application that allows users to share their loca
 * Allow friends (or all users) to locate you via a pin displayed on a map.
 * Search and Connect with users within a given radius of your location.
 * Ability to navigate to photo/friend location via map pins
+* Send and Receive messages from friends and others
 
 ## Design Structure
 ### Database
