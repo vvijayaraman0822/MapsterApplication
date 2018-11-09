@@ -1,9 +1,10 @@
 export interface User {
-    firstName: string; // First name
-    lastName: string; // Last name
-    registerDate: string; // timestamp of the moment the user first registered
-    lastLogin: string; // timestamp of the moment the last authentication happened
-    email: string; // email, duh
+    firstName: string;
+    lastName: string;
+    userName: string;
+    registerDate: string;
+    lastLogin: string;
+    email: string;
     // validated: boolean; Defined in firebase.User
     profileImage: string; // reference to the image the user has assigned as their profile pic
     publicImages: string; // reference to the collection of the users images they have chosen to make viewable to anyone
