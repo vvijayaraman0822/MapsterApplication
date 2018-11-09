@@ -25673,3 +25673,13 @@ ion-navbar.toolbar {
   min-height: calc(46px + constant(safe-area-inset-bottom));
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
+
+page-login .logo {
+  overflow: auto;
+  height: 60%;
+  width: 80%;
+  float: left;
+  margin-left: auto;
+  margin-top: auto;
+  background-image: url(../assets/imgs/logo.png);
+}
