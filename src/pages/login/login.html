@@ -12,18 +12,25 @@
 
 <ion-content padding>
   
-  <ion-col offset-33 width-33 class="logo"></ion-col>
   <ion-list>
   
     <ion-item class="item">
-      <ion-label floating>Username</ion-label>
-      <ion-input type="text" class="username"></ion-input>
+      <ion-label floating>Email Address</ion-label>
+      <ion-input type="text" class="username" [(ngModel)]="account.email" ></ion-input>
     </ion-item>
   
     <ion-item class="item">
       <ion-label floating>Password</ion-label>
-      <ion-input type="text" class="password"></ion-input>
+      <ion-input type="text" class="password" [(ngModel)]="account.password" ></ion-input>
     </ion-item>
+
+    <button ion-button round (click)="login()" class="login">
+      Login
+    </button>
+    <button ion-button round (click)="register()" class="register">
+      Register
+    </button>
+    
   </ion-list>
 
 </ion-content>

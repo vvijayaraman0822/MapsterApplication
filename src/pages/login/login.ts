@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
+import { User } from '../../models/users/user.interface';
+import { Account } from '../../models/registration/account.interface';
+import { AuthProvider } from '../../providers/auth/auth';
+import { UtilitiesProvider } from '../../providers/utilities/utilities';
+import { TOAST_DURATION, Pages, LoadingMessages, ErrorMessages } from '../../utils/constants';
 
-/**
- * Generated class for the LoginPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+
 
 @IonicPage()
 @Component({
@@ -15,11 +15,49 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class LoginPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  account = {} as Account;
+
+  constructor(public navCtrl: NavController, private auth: AuthProvider, private utilities: UtilitiesProvider) {
+    
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
+  }
+
+  async login() {
+
+    let loader = this.utilities.getLoading(LoadingMessages.LOGIN);
+
+    // check for empty fields
+    if (this.validate()) {
+
+      try {
+
+        loader.present();
+
+        await this.auth.loginWithEmailAndPassword(this.account);
+
+        loader.dismiss();
+
+      } catch (e) {
+        loader.dismiss();
+        this.utilities.showToast(e, TOAST_DURATION);
+      }
+      
+    } else {
+      this.utilities.showToast(ErrorMessages.EMPTY_FIELDS, TOAST_DURATION);
+    }
+
+  }
+
+  register() {
+    this.navCtrl.push(Pages.REGISTER_PAGE);
+  }
+
+  validate() {
+    return this.account.email !== null && this.account.email !== ''
+      && this.account.password !== null && this.account.password !== '';
   }
 
 }

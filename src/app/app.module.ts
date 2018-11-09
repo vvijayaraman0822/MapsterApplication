@@ -17,6 +17,7 @@ import { NetworkProvider } from '../providers/network/network';
 import { MapProvider } from '../providers/map/map';
 import { LocationProvider } from '../providers/location/location';
 import { MessagesProvider } from '../providers/messages/messages';
+import { UtilitiesProvider } from '../providers/utilities/utilities';
 
 @NgModule({
   declarations: [
@@ -36,14 +37,16 @@ import { MessagesProvider } from '../providers/messages/messages';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
     DataProvider,
     UserDataProvider,
     AuthProvider,
     NetworkProvider,
     MapProvider,
     LocationProvider,
-    MessagesProvider
+    MessagesProvider,
+    UtilitiesProvider
   ]
 })
-export class AppModule {}
+
+export class AppModule { }
