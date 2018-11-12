@@ -32,9 +32,9 @@ export class AuthProvider {
     try {
       console.log(await this.auth.auth.signInWithEmailAndPassword(account.email, account.password));
 
-      let emailVerified = await this.isEmailVerified();
-      if (!emailVerified)
-        throw new Error('Email is not verified');
+      // let emailVerified = await this.isEmailVerified();
+      // if (!emailVerified)
+        // throw new Error('Email is not verified');
 
     } catch (e) {
       console.log(e.message);

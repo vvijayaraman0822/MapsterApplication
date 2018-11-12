@@ -22,4 +22,12 @@ export class HomePage {
     console.log('ionViewDidLoad HomePage');
   }
 
+  public openModal() {
+
+  }
+
+  public closeModal() {
+    
+  }
+
 }
