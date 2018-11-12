@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
+import { TOAST_DURATION, Pages, LoadingMessages, ErrorMessages } from '../../utils/constants';
+
 
 /**
  * Generated class for the HomePage page.
@@ -15,15 +17,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public modal: ModalController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad HomePage');
   }
 
-  public openModal() {
-
+  public openProfileModal() {
+    let profileModal = this.modal.create(Pages.MODAL_PROFILE);
+    profileModal.present();
   }
 
   public closeModal() {

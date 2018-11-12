@@ -39,6 +39,7 @@ export class LoginPage {
         await this.auth.loginWithEmailAndPassword(this.account);
 
         loader.dismiss();
+        this.navCtrl.setRoot(Pages.HOME_PAGE)
 
       } catch (e) {
         loader.dismiss();
