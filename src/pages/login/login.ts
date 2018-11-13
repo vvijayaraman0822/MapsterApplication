@@ -39,7 +39,7 @@ export class LoginPage {
 
         await this.auth.loginWithEmailAndPassword(this.account);
 
-        if (this.hasProfile()) {
+        if (await this.userData.profileExists()) {
           loader.dismiss();
           this.navCtrl.setRoot(Pages.HOME_PAGE)
         } else {
