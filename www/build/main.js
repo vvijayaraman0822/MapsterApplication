@@ -242,20 +242,23 @@ var UserDataProvider = /** @class */ (function () {
      */
     UserDataProvider.prototype.createUserProfile = function (profile) {
         return __awaiter(this, void 0, void 0, function () {
-            var e_2;
+            var user, e_2;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        _a.trys.push([0, 2, , 3]);
-                        return [4 /*yield*/, this.data.collection('users').add(profile)];
+                        _a.trys.push([0, 3, , 4]);
+                        return [4 /*yield*/, this.auth.getAuthenticatedUser()];
                     case 1:
-                        _a.sent();
-                        return [3 /*break*/, 3];
+                        user = _a.sent();
+                        return [4 /*yield*/, this.data.doc("users/" + user.uid).set(profile)];
                     case 2:
+                        _a.sent();
+                        return [3 /*break*/, 4];
+                    case 3:
                         e_2 = _a.sent();
                         console.log(e_2);
                         throw e_2;
-                    case 3: return [2 /*return*/];
+                    case 4: return [2 /*return*/];
                 }
             });
         });
@@ -449,7 +452,7 @@ var MyApp = /** @class */ (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/brice/source/repos/mapster/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/home/brice/source/repos/mapster/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/brice/source/repos/Mapster/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/home/brice/source/repos/Mapster/src/app/app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_4__providers_auth_auth__["a" /* AuthProvider */]])
     ], MyApp);
