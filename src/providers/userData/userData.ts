@@ -26,11 +26,14 @@ export class UserDataProvider {
       let subscription = this.data.doc<User>(`users/${user.uid}`)
 
         // get user object
-        .valueChanges().subscribe((profile: User) => {
+        .valueChanges().subscribe((profile: any) => {
           
           // check if profile exists
-          if (profile !== null && profile.firstName !== null)
+          console.log(profile);
+          if (profile !== undefined && profile.firstName !== null) {
+            
             resolve(profile);
+          }
           else
             reject("Profile Does not exist");
 
