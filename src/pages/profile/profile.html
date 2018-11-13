@@ -16,25 +16,25 @@
 
     <ion-item class="item">
       <ion-label floating>Username</ion-label>
-      <ion-input type="text" class="username"></ion-input>
+      <ion-input type="text" class="username" [(ngModel)]="profile.userName"></ion-input>
     </ion-item>
 
     <ion-item class="item">
       <ion-label floating>First Name</ion-label>
-      <ion-input type="text" class="firstname"></ion-input>
+      <ion-input type="text" class="firstname"[(ngModel)]="profile.firstName"></ion-input>
     </ion-item>
 
     <ion-item class="item">
       <ion-label floating>Last Name</ion-label>
-      <ion-input type="text" class="lastname"></ion-input>
+      <ion-input type="text" class="lastname" [(ngModel)]="profile.lastName"></ion-input>
     </ion-item>
 
     <ion-item class="item">
       <ion-label floating>Profile Picture</ion-label>
-      <ion-input type="text" class="profilepic"></ion-input>
+      <ion-input type="text" class="profilepic" [(ngModel)]="profile.profileImage"></ion-input>
     </ion-item>
 
-    <button ion-button round class="save">
+    <button ion-button round class="save" (click)="saveProfile()">
       Save
     </button>
 
