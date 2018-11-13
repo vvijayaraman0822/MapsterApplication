@@ -66,7 +66,8 @@ export class UserDataProvider {
    */
   async createUserProfile(profile: User) {
     try {
-      await this.data.collection<User>('users').add(profile);
+      let user = await this.auth.getAuthenticatedUser();
+      await this.data.doc<User>(`users/${user.uid}`).set(profile);
     } catch (e) {
       console.log(e);
       throw e;
