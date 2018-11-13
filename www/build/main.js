@@ -23,19 +23,19 @@ webpackEmptyAsyncContext.id = 196;
 var map = {
 	"../pages/home/home.module": [
 		505,
-		2
+		3
 	],
 	"../pages/login/login.module": [
 		506,
-		1
+		2
 	],
 	"../pages/modal-profile/modal-profile.module": [
 		507,
-		4
+		1
 	],
 	"../pages/profile/profile.module": [
 		508,
-		3
+		4
 	],
 	"../pages/register/register.module": [
 		509,

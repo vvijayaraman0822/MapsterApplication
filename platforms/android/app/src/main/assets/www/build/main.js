@@ -1,4 +1,4 @@
-webpackJsonp([4],{
+webpackJsonp([5],{
 
 /***/ 196:
 /***/ (function(module, exports) {
@@ -27,14 +27,18 @@ var map = {
 	],
 	"../pages/login/login.module": [
 		506,
+		2
+	],
+	"../pages/modal-profile/modal-profile.module": [
+		507,
 		1
 	],
 	"../pages/profile/profile.module": [
-		507,
-		2
+		508,
+		4
 	],
 	"../pages/register/register.module": [
-		508,
+		509,
 		0
 	]
 };
@@ -104,7 +108,7 @@ var UtilitiesProvider = /** @class */ (function () {
     };
     UtilitiesProvider = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ToastController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ToastController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */]])
     ], UtilitiesProvider);
     return UtilitiesProvider;
 }());
@@ -191,6 +195,7 @@ var AppModule = /** @class */ (function () {
                     links: [
                         { loadChildren: '../pages/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/modal-profile/modal-profile.module#ModalProfilePageModule', name: 'ModalProfilePage', segment: 'modal-profile', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/profile/profile.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/register/register.module#RegisterPageModule', name: 'RegisterPage', segment: 'register', priority: 'low', defaultHistory: [] }
                     ]
@@ -264,7 +269,7 @@ var MyApp = /** @class */ (function () {
     MyApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/brice/source/repos/Mapster/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/home/brice/source/repos/Mapster/src/app/app.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_4__providers_auth_auth__["a" /* AuthProvider */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_4__providers_auth_auth__["a" /* AuthProvider */]])
     ], MyApp);
     return MyApp;
 }());
@@ -761,26 +766,21 @@ var AuthProvider = /** @class */ (function () {
      */
     AuthProvider.prototype.loginWithEmailAndPassword = function (account) {
         return __awaiter(this, void 0, void 0, function () {
-            var _a, _b, emailVerified, e_2;
+            var _a, _b, e_2;
             return __generator(this, function (_c) {
                 switch (_c.label) {
                     case 0:
-                        _c.trys.push([0, 3, , 4]);
+                        _c.trys.push([0, 2, , 3]);
                         _b = (_a = console).log;
                         return [4 /*yield*/, this.auth.auth.signInWithEmailAndPassword(account.email, account.password)];
                     case 1:
                         _b.apply(_a, [_c.sent()]);
-                        return [4 /*yield*/, this.isEmailVerified()];
+                        return [3 /*break*/, 3];
                     case 2:
-                        emailVerified = _c.sent();
-                        if (!emailVerified)
-                            throw new Error('Email is not verified');
-                        return [3 /*break*/, 4];
-                    case 3:
                         e_2 = _c.sent();
                         console.log(e_2.message);
                         throw e_2;
-                    case 4: return [2 /*return*/];
+                    case 3: return [2 /*return*/];
                 }
             });
         });
