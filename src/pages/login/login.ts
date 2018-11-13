@@ -67,8 +67,4 @@ export class LoginPage {
       && this.account.password !== null && this.account.password !== '';
   }
 
-  hasProfile() {
-    return this.userData.profileExists();
-  }
-
 }
