@@ -11,26 +11,39 @@
 -->
 
 <ion-content padding>
-  
+
   <ion-list>
-  
+
+    <div class="row">
+      <div class="logo-row">
+        <img src="../../assets/imgs/logo.png" alt="logo" class="logo">
+      </div>
+    </div>
+
     <ion-item class="item">
       <ion-label floating>Email Address</ion-label>
-      <ion-input type="text" class="username" [(ngModel)]="account.email" ></ion-input>
-    </ion-item>
-  
-    <ion-item class="item">
-      <ion-label floating>Password</ion-label>
-      <ion-input type="password" class="password" [(ngModel)]="account.password" ></ion-input>
+      <ion-input type="text" class="username" [(ngModel)]="account.email"></ion-input>
     </ion-item>
 
-    <button ion-button round (click)="login()" class="login">
-      Login
-    </button>
-    <button ion-button round (click)="register()" class="register">
-      Register
-    </button>
-    
+    <ion-item class="item">
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password" class="password" [(ngModel)]="account.password"></ion-input>
+    </ion-item>
+
+    <div>
+      <a class="forgot" float-right>Forgot Password?</a>
+    </div>
+
+    <div class="button">
+      <button ion-button round (click)="login()" class="login">
+        Login
+      </button>
+
+      <button ion-button round (click)="register()" class="register">
+        Register
+      </button>
+    </div>
+
   </ion-list>
 
 </ion-content>
