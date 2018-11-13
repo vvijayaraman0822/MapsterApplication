@@ -14,6 +14,7 @@ export class Pages {
 export class LoadingMessages {
     public static readonly LOGIN: string = 'Logging in...';
     public static readonly REGISTER: string = 'Creating account...';
+    public static readonly PROFILE: string = 'Saving profile...';
 }
 
 export class ErrorMessages {
@@ -23,4 +24,5 @@ export class ErrorMessages {
 
 export class SuccessMessages {
     public static readonly REGISTER = 'Account created!';
+    public static readonly PROFILE = 'Profile saved!';
 }
