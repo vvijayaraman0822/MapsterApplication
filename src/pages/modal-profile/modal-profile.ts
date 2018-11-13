@@ -26,6 +26,7 @@ export class ModalProfilePage {
 
   logout() {
     this.auth.logout();
+    this.navCtrl.pop();
     this.navCtrl.setRoot(Pages.LOGIN_PAGE);
   }
 }

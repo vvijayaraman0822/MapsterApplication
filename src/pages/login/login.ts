@@ -5,6 +5,7 @@ import { Account } from '../../models/registration/account.interface';
 import { AuthProvider } from '../../providers/auth/auth';
 import { UtilitiesProvider } from '../../providers/utilities/utilities';
 import { TOAST_DURATION, Pages, LoadingMessages, ErrorMessages } from '../../utils/constants';
+import { UserDataProvider } from '../../providers/userData/userData';
 
 
 
@@ -17,8 +18,8 @@ export class LoginPage {
 
   account = {} as Account;
 
-  constructor(public navCtrl: NavController, private auth: AuthProvider, private utilities: UtilitiesProvider) {
-    
+  constructor(public navCtrl: NavController, private auth: AuthProvider, private utilities: UtilitiesProvider, private userData: UserDataProvider) {
+
   }
 
   ionViewDidLoad() {
@@ -38,14 +39,19 @@ export class LoginPage {
 
         await this.auth.loginWithEmailAndPassword(this.account);
 
-        loader.dismiss();
-        this.navCtrl.setRoot(Pages.HOME_PAGE)
+        if (this.hasProfile()) {
+          loader.dismiss();
+          this.navCtrl.setRoot(Pages.HOME_PAGE)
+        } else {
+          loader.dismiss();
+          this.navCtrl.setRoot(Pages.PROFILE_PAGE)
+        }
 
       } catch (e) {
         loader.dismiss();
         this.utilities.showToast(e, TOAST_DURATION);
       }
-      
+
     } else {
       this.utilities.showToast(ErrorMessages.EMPTY_FIELDS, TOAST_DURATION);
     }
@@ -59,6 +65,10 @@ export class LoginPage {
   validate() {
     return this.account.email !== null && this.account.email !== ''
       && this.account.password !== null && this.account.password !== '';
+  }
+
+  hasProfile() {
+    return this.userData.profileExists();
   }
 
 }

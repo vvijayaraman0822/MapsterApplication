@@ -6,24 +6,20 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar no-border>
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
 
-      <ion-navbar>
-          <button ion-button icon-only menuToggle>
-            <ion-icon name="menu"></ion-icon>
-          </button>
-      
-          <ion-title>
-            HomePage
-          </ion-title>
-      
-          <ion-buttons end>
-            <button ion-button icon-only (click)="openProfileModal()">
-              <ion-icon name="contact"></ion-icon>
-            </button>
-          </ion-buttons>
-        </ion-navbar>
-    
+    <ion-title>
+      HomePage
+    </ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openProfileModal()">
+        <ion-icon name="contact"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>

@@ -7,6 +7,7 @@ export class Pages {
     public static readonly LOGIN_PAGE: string = 'LoginPage'
     public static readonly REGISTER_PAGE: string = 'RegisterPage'
     public static readonly HOME_PAGE: string = 'HomePage'
+    public static readonly PROFILE_PAGE: string = 'ProfilePage'
     public static readonly MODAL_PROFILE: string = 'ModalProfilePage'
 }
 
