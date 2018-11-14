@@ -18,7 +18,6 @@ import { MapProvider } from '../providers/map/map';
 import { LocationProvider } from '../providers/location/location';
 import { MessagesProvider } from '../providers/messages/messages';
 import { UtilitiesProvider } from '../providers/utilities/utilities';
-import { PermissionsProvider } from '../providers/permissions/permissions';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
@@ -49,7 +48,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     LocationProvider,
     MessagesProvider,
     UtilitiesProvider,
-    PermissionsProvider,
     BrowserAnimationsModule
   ]
 })

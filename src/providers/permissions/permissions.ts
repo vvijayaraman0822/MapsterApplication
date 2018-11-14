@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Diagnostic } from '@ionic-native/diagnostic';
+// import { Diagnostic } from '@ionic-native/diagnostic';
 
 /*
   Generated class for the PermissionsProvider provider.
@@ -10,7 +10,7 @@ import { Diagnostic } from '@ionic-native/diagnostic';
 @Injectable()
 export class PermissionsProvider {
 
-  constructor(private diagnostic: Diagnostic) {
+  constructor() {
     console.log('Hello PermissionsProvider Provider');
   }
 
