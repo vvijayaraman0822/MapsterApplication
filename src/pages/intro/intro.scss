@@ -16,20 +16,22 @@ page-intro {
     background-color: #2ecc71;
   }
 
-  .logo {
-    display: block;
-    position: absolute;
-    background-color: transparent !important;
-    left: 20%;
-    margin-top: 20%;
-  }
-
   .diag {
     position: absolute;
     z-index: 1;
     width: 100%;
     top: 0;
     height: 66%;
+  }
+
+  .logo {
+    display: block;
+    position: absolute;
+    background-color: transparent !important;
+    left: 20%;
+    margin-top: 20%;
+    width: 60%;
+    height: 80%;
   }
 
   ion-icon {
