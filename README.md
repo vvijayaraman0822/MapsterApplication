@@ -14,6 +14,27 @@ Mapster is a social networking application that allows users to share their loca
 * Ability to navigate to photo/friend location via map pins
 * Send and Receive messages from friends and others
 
+## Mapster Team
+### Team Leader
+Brice Allard - https://github.com/briceallard  
+### Team Members
+Zac Conley - https://github.com/acdczlc  
+Darien Cortez - https://github.com/dcortez0817  
+William Divine - https://github.com/mack2great  
+Chris Duhan - https://github.com/ChrisDuhan  
+Cory Michener - https://github.com/Arbiter1223  
+Carlos Placencia - https://github.com/CarlosPlacencia  
+Travis Rowe - https://github.com/Travisrowe  
+Drew Smith - https://github.com/buddyjasmith  
+Vasudev Vijayaraman - https://github.com/vvijayaraman0822  
+Brett Workman - Has not contributed any information yet  
+### Individual Project Groups
+**Camera:** Zac Conley, Vasudev Vijayaraman  
+**Maps:** Carlos Placencia, Drew Smith  
+**Messaging:** Travis Rowe, Brett Workman  
+**Providers:** Brice Allard, Chris Duhan  
+**UI/UX:** Darien Cortez, William Divine, Cory Michener
+
 ## Design Structure
 ### Database
 #### Firebase
