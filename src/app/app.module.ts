@@ -18,6 +18,8 @@ import { MapProvider } from '../providers/map/map';
 import { LocationProvider } from '../providers/location/location';
 import { MessagesProvider } from '../providers/messages/messages';
 import { UtilitiesProvider } from '../providers/utilities/utilities';
+import { PermissionsProvider } from '../providers/permissions/permissions';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { UtilitiesProvider } from '../providers/utilities/utilities';
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(FIREBASE_CONFIG),
     AngularFireAuthModule,
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    BrowserAnimationsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -45,7 +48,9 @@ import { UtilitiesProvider } from '../providers/utilities/utilities';
     MapProvider,
     LocationProvider,
     MessagesProvider,
-    UtilitiesProvider
+    UtilitiesProvider,
+    PermissionsProvider,
+    BrowserAnimationsModule
   ]
 })
 

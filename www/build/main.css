@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,700");
 .ion-ios-add:before {
   content: "\f102";
 }
@@ -25672,6 +25673,101 @@ ion-navbar.toolbar {
   padding-bottom: calc(env(safe-area-inset-bottom) + 4px);
   min-height: calc(46px + constant(safe-area-inset-bottom));
   min-height: calc(46px + env(safe-area-inset-bottom));
+}
+
+ion-content {
+  font-family: 'Roboto' !important;
+}
+
+.ios .slide1,
+.md .slide1 {
+  background-color: #fff;
+}
+
+.ios .slide2,
+.md .slide2 {
+  background-color: #e67e22;
+}
+
+.ios .slide3,
+.md .slide3 {
+  background-color: #9b59b6;
+}
+
+.ios .slide4,
+.md .slide4 {
+  background-color: #2ecc71;
+}
+
+.ios .logo,
+.md .logo {
+  display: block;
+  position: absolute;
+  background-color: transparent !important;
+  left: 20%;
+  margin-top: 20%;
+}
+
+.ios .diag,
+.md .diag {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  height: 66%;
+}
+
+.ios ion-icon,
+.md ion-icon {
+  margin-top: 30%;
+  font-size: 7em;
+}
+
+.ios h2,
+.md h2 {
+  margin-top: 80% !important;
+  font-weight: normal;
+  font-size: 1em;
+}
+
+.ios p,
+.md p {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  font-size: .8em;
+}
+
+.ios .swiper-pagination-bullet-active,
+.md .swiper-pagination-bullet-active {
+  background: #0054FE;
+}
+
+.ios .swiper-pagination,
+.md .swiper-pagination {
+  bottom: 12% !important;
+}
+
+.ios .scroll-content,
+.md .scroll-content {
+  padding: 0 !important;
+}
+
+.ios .swiper-slide,
+.md .swiper-slide {
+  width: 100% !important;
+}
+
+.ios .skipper,
+.md .skipper {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  z-index: 5;
+  font-size: 1em;
+  color: black !important;
 }
 
 .ios .logo-row, .md .logo-row {

@@ -17,8 +17,8 @@ export class MyApp {
       statusBar.styleDefault();
 
       auth.isAuthenticated()
-        .then((auth => { this.rootPage = auth ? 'HomePage' : 'LoginPage'; splashScreen.hide(); } ))
-        .catch((error) => { this.rootPage = 'LoginPage'; splashScreen.hide(); })
+        .then((auth => { this.rootPage = auth ? 'HomePage' : 'IntroPage'; splashScreen.hide(); } ))
+        .catch((error) => { this.rootPage = 'IntroPage'; splashScreen.hide(); })
     });
   }
 }
