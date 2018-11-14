@@ -27,8 +27,8 @@ Carlos Placencia - https://github.com/CarlosPlacencia
 Travis Rowe - https://github.com/Travisrowe  
 Drew Smith - https://github.com/buddyjasmith  
 Vasudev Vijayaraman - https://github.com/vvijayaraman0822  
-Brett Workman - Has not contributed any information yet  
-### Individual Project Groups
+Brett Workman - https://github.com/BMWorkman  
+### Individual Project Group
 **Camera:** Zac Conley, Vasudev Vijayaraman  
 **Maps:** Carlos Placencia, Drew Smith  
 **Messaging:** Travis Rowe, Brett Workman  
