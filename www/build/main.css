@@ -25679,28 +25679,23 @@ ion-content {
   font-family: 'Roboto' !important;
 }
 
-.ios .slide1,
-.md .slide1 {
+page-intro .slide1 {
   background-color: #fff;
 }
 
-.ios .slide2,
-.md .slide2 {
+page-intro .slide2 {
   background-color: #e67e22;
 }
 
-.ios .slide3,
-.md .slide3 {
+page-intro .slide3 {
   background-color: #9b59b6;
 }
 
-.ios .slide4,
-.md .slide4 {
+page-intro .slide4 {
   background-color: #2ecc71;
 }
 
-.ios .logo,
-.md .logo {
+page-intro .logo {
   display: block;
   position: absolute;
   background-color: transparent !important;
@@ -25708,8 +25703,7 @@ ion-content {
   margin-top: 20%;
 }
 
-.ios .diag,
-.md .diag {
+page-intro .diag {
   position: absolute;
   z-index: 1;
   width: 100%;
@@ -25717,49 +25711,41 @@ ion-content {
   height: 66%;
 }
 
-.ios ion-icon,
-.md ion-icon {
+page-intro ion-icon {
   margin-top: 30%;
   font-size: 7em;
 }
 
-.ios h2,
-.md h2 {
+page-intro h2 {
   margin-top: 80% !important;
   font-weight: normal;
   font-size: 1em;
 }
 
-.ios p,
-.md p {
+page-intro p {
   width: 80%;
   display: block;
   margin: 0 auto;
   font-size: .8em;
 }
 
-.ios .swiper-pagination-bullet-active,
-.md .swiper-pagination-bullet-active {
+page-intro .swiper-pagination-bullet-active {
   background: #0054FE;
 }
 
-.ios .swiper-pagination,
-.md .swiper-pagination {
+page-intro .swiper-pagination {
   bottom: 12% !important;
 }
 
-.ios .scroll-content,
-.md .scroll-content {
+page-intro .scroll-content {
   padding: 0 !important;
 }
 
-.ios .swiper-slide,
-.md .swiper-slide {
+page-intro .swiper-slide {
   width: 100% !important;
 }
 
-.ios .skipper,
-.md .skipper {
+page-intro .skipper {
   position: absolute;
   bottom: 20px;
   width: 100%;
@@ -25770,44 +25756,44 @@ ion-content {
   color: black !important;
 }
 
-.ios .logo-row, .md .logo-row {
+page-login .logo-row {
   width: 250px;
   margin: 100px auto;
 }
 
-.ios .logo, .md .logo {
+page-login .logo {
   width: 100%;
   height: 235px;
   text-align: center;
 }
 
-.ios .form, .md .form {
+page-login .form {
   position: relative;
   min-height: 150px;
 }
 
-.ios .form-row, .md .form-row {
+page-login .form-row {
   position: absolute;
   bottom: 0;
   left: 0;
 }
 
-.ios .button, .md .button {
+page-login .button {
   margin-top: 10px;
 }
 
-.ios .forgot, .md .forgot {
+page-login .forgot {
   margin-top: 30px;
 }
 
-.ios .button.login, .md .button.login {
+page-login .button.login {
   margin-left: 15px;
   margin-bottom: 15px;
   -webkit-box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.75);
 }
 
-.ios .button.register, .md .button.register {
+page-login .button.register {
   margin-left: 15px;
   margin-bottom: 15px;
   -webkit-box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.75);

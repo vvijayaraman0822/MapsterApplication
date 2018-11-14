@@ -22,27 +22,27 @@ webpackEmptyAsyncContext.id = 196;
 
 var map = {
 	"../pages/home/home.module": [
-		509,
+		508,
 		5
 	],
 	"../pages/intro/intro.module": [
-		510,
+		509,
 		4
 	],
 	"../pages/login/login.module": [
-		511,
+		510,
 		3
 	],
 	"../pages/modal-profile/modal-profile.module": [
-		512,
+		511,
 		2
 	],
 	"../pages/profile/profile.module": [
-		513,
+		512,
 		1
 	],
 	"../pages/register/register.module": [
-		514,
+		513,
 		0
 	]
 };
@@ -346,7 +346,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__providers_location_location__ = __webpack_require__(504);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__providers_messages_messages__ = __webpack_require__(505);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__providers_utilities_utilities__ = __webpack_require__(287);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__angular_platform_browser_animations__ = __webpack_require__(507);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__angular_platform_browser_animations__ = __webpack_require__(506);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
