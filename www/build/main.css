@@ -25696,12 +25696,13 @@ page-intro .slide4 {
 }
 
 page-intro .diag {
-  background: url(../../assets/imgs/whitebg.svg) no-repeat;
+  background: url(../../assets/imgs/whitebg1.svg) no-repeat;
   position: absolute;
   z-index: 1;
   width: 100%;
   top: 0;
   height: 66%;
+  z-index: 1;
 }
 
 page-intro .logo {
