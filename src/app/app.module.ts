@@ -5,19 +5,20 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
 import { DataProvider } from '../providers/data/data';
 
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth'
 import { FIREBASE_CONFIG } from '../firebase-config/app.firebase.config'
 import { AngularFirestoreModule } from 'angularfire2/firestore'
-import { UserDataProvider } from '../providers/user-data/user-data';
+import { UserDataProvider } from '../providers/userData/userData';
 import { AuthProvider } from '../providers/auth/auth';
 import { NetworkProvider } from '../providers/network/network';
 import { MapProvider } from '../providers/map/map';
 import { LocationProvider } from '../providers/location/location';
 import { MessagesProvider } from '../providers/messages/messages';
+import { UtilitiesProvider } from '../providers/utilities/utilities';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MessagesProvider } from '../providers/messages/messages';
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(FIREBASE_CONFIG),
     AngularFireAuthModule,
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    BrowserAnimationsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -37,14 +39,17 @@ import { MessagesProvider } from '../providers/messages/messages';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
     DataProvider,
     UserDataProvider,
     AuthProvider,
     NetworkProvider,
     MapProvider,
     LocationProvider,
-    MessagesProvider
+    MessagesProvider,
+    UtilitiesProvider,
+    BrowserAnimationsModule
   ]
 })
-export class AppModule {}
+
+export class AppModule { }
