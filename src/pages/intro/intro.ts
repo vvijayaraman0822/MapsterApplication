@@ -2,13 +2,6 @@ import { Component, ViewChild, trigger, transition, style, state, animate, keyfr
 import { IonicPage, NavController, NavParams, Slides } from 'ionic-angular';
 import { Pages } from '../../utils/constants';
 
-/**
- * Generated class for the IntroPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
 @IonicPage()
 @Component({
   selector: 'page-intro',
@@ -35,7 +28,6 @@ import { Pages } from '../../utils/constants';
 
 export class IntroPage {
   @ViewChild(Slides) slides: Slides;
-  skipMsg: string = "Skip";
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -44,21 +36,20 @@ export class IntroPage {
     console.log('ionViewDidLoad IntroPage');
   }
 
-  skip() {
-    this.navCtrl.setRoot(Pages.LOGIN_PAGE);
+  slideChanged() {
+
   }
 
-  slideChanged() {
-    if (this.slides.isEnd())
-      this.skipMsg = "Get started now";
+  skip() {
+    this.navCtrl.setRoot(Pages.LOGIN_PAGE);
   }
 
   state: string = 'x';
 
   slideMoved() {
-    if (this.slides.getActiveIndex() >= this.slides.getPreviousIndex()) 
+    if (this.slides.getActiveIndex() >= this.slides.getPreviousIndex())
       this.state = 'rightSwipe';
-    else 
+    else
       this.state = 'leftSwipe';
   }
 

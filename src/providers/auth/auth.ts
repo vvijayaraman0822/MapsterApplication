@@ -3,10 +3,13 @@ import { AngularFireAuth } from 'angularfire2/auth';
 import { Account } from '../../models/registration/account.interface';
 import { User } from 'firebase';
 
+import { UtilitiesProvider } from '../utilities/utilities';
+import { Pages } from '../../utils/constants';
+
 @Injectable()
 export class AuthProvider {
 
-  constructor(private auth: AngularFireAuth) {}
+  constructor(private auth: AngularFireAuth, private util: UtilitiesProvider) {}
 
   /**
    * Create an account with an email and a password

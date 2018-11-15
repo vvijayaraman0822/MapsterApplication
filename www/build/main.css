@@ -15062,7 +15062,7 @@ ion-list[inset] {
   padding-left: 16px;
   margin-bottom: 13px;
   min-height: 4.5rem;
-  border-top: 1px solid #dedede;
+  border-top: 0px;
   font-size: 1.4rem;
   color: #757575;
 }
@@ -25680,7 +25680,7 @@ ion-content {
 }
 
 page-intro .slide1 {
-  background-color: #fff;
+  background-color: #95a5a6;
 }
 
 page-intro .slide2 {
@@ -25696,6 +25696,7 @@ page-intro .slide4 {
 }
 
 page-intro .diag {
+  background: url(../../assets/imgs/whitebg.svg) no-repeat;
   position: absolute;
   z-index: 1;
   width: 100%;
@@ -25747,15 +25748,14 @@ page-intro .swiper-slide {
   width: 100% !important;
 }
 
-page-intro .skipper {
+page-intro .skip {
   position: absolute;
   bottom: 20px;
-  width: 100%;
-  text-align: center;
+  right: 20px;
   cursor: pointer;
   z-index: 5;
-  font-size: 1em;
-  color: black !important;
+  font-size: .8em;
+  color: white !important;
 }
 
 page-login .logo-row {
