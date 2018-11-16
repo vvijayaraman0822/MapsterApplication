@@ -1,13 +1,9 @@
-<!--
-  Generated template for the ModalProfilePage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Profile</ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="close()">Close</button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
@@ -17,14 +13,53 @@
 
   <ion-list>
 
-    <button ion-item detail-none (click)="editProfile()" class="edit">
-      <ion-icon name="md-create" class="icon"></ion-icon>
-      Edit
-    </button>
+    <ion-list-header>
+      Profile
+      <ion-icon small name="contact" item-end></ion-icon>
+    </ion-list-header>
 
-    <button ion-item detail-none (click)="logout()" class="logout">
-      Logout
-    </button>
+    <ion-item-group>
+
+      <button ion-item>
+        <ion-icon color="primary" item-start name="people"></ion-icon>
+        Friends
+      </button>
+
+      <button ion-item>
+        <ion-icon color="primary" item-start name="chatboxes"></ion-icon>
+        Messages
+      </button>
+
+      <button ion-item>
+        <ion-icon color="primary" item-start name="images"></ion-icon>
+        My Pictures
+      </button>
+
+    </ion-item-group>
+
+    <ion-list-header>
+      Settings
+      <ion-icon small name="settings" item-end></ion-icon>
+    </ion-list-header>
+
+    <ion-item-group>
+
+      <button ion-item>
+        <ion-icon color="primary" item-start name="contact"></ion-icon>
+        Edit Profile
+      </button>
+
+      <button ion-item>
+        <ion-icon color="primary" item-start name="lock"></ion-icon>
+        Privacy
+      </button>
+
+      <button ion-item (click)=logoutConfirm()>
+        <ion-icon color="primary" item-start name="log-out"></ion-icon>
+        Logout
+      </button>
+
+    </ion-item-group>
 
   </ion-list>
 

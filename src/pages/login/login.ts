@@ -7,8 +7,6 @@ import { UtilitiesProvider } from '../../providers/utilities/utilities';
 import { TOAST_DURATION, Pages, LoadingMessages, ErrorMessages } from '../../utils/constants';
 import { UserDataProvider } from '../../providers/userData/userData';
 
-
-
 @IonicPage()
 @Component({
   selector: 'page-login',

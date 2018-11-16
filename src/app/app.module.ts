@@ -30,7 +30,9 @@ import {GoogleMaps} from '@ionic-native/google-maps';
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(FIREBASE_CONFIG),
     AngularFireAuthModule,
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    BrowserAnimationsModule,
+    IonicStorageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
