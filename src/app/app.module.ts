@@ -18,7 +18,9 @@ import { MapProvider } from '../providers/map/map';
 import { LocationProvider } from '../providers/location/location';
 import { MessagesProvider } from '../providers/messages/messages';
 import { UtilitiesProvider } from '../providers/utilities/utilities';
+import { Geolocation } from '@ionic-native/geolocation';
 
+import {GoogleMaps} from '@ionic-native/google-maps';
 @NgModule({
   declarations: [
     MyApp,
@@ -37,6 +39,7 @@ import { UtilitiesProvider } from '../providers/utilities/utilities';
   providers: [
     StatusBar,
     SplashScreen,
+    GoogleMaps,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     DataProvider,
     UserDataProvider,
@@ -45,7 +48,8 @@ import { UtilitiesProvider } from '../providers/utilities/utilities';
     MapProvider,
     LocationProvider,
     MessagesProvider,
-    UtilitiesProvider
+    UtilitiesProvider,
+    Geolocation
   ]
 })
 

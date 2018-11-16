@@ -25674,6 +25674,10 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
+page-home #map_canvas {
+  height: 90%;
+}
+
 .ios .logo-row, .md .logo-row {
   width: 250px;
   margin: 100px auto;
