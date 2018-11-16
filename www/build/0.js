@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 513:
+/***/ 516:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RegisterPageModule", function() { return RegisterPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register__ = __webpack_require__(520);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register__ = __webpack_require__(522);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,68 +38,16 @@ var RegisterPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 514:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return TOAST_DURATION; });
-/* unused harmony export LOADING_STYLE */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return Pages; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return LoadingMessages; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ErrorMessages; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return SuccessMessages; });
-var TOAST_DURATION = 3000;
-var LOADING_STYLE = 'crescent';
-var Pages = /** @class */ (function () {
-    function Pages() {
-    }
-    Pages.LOGIN_PAGE = 'LoginPage';
-    Pages.REGISTER_PAGE = 'RegisterPage';
-    Pages.HOME_PAGE = 'HomePage';
-    Pages.PROFILE_PAGE = 'ProfilePage';
-    Pages.MODAL_PROFILE = 'ModalProfilePage';
-    return Pages;
-}());
-
-var LoadingMessages = /** @class */ (function () {
-    function LoadingMessages() {
-    }
-    LoadingMessages.LOGIN = 'Logging in...';
-    LoadingMessages.REGISTER = 'Creating account...';
-    LoadingMessages.PROFILE = 'Saving profile...';
-    return LoadingMessages;
-}());
-
-var ErrorMessages = /** @class */ (function () {
-    function ErrorMessages() {
-    }
-    ErrorMessages.EMPTY_FIELDS = 'Empty fields are not allowed.';
-    ErrorMessages.PASSWORD_MISMATCH = 'Passwords do not match.';
-    return ErrorMessages;
-}());
-
-var SuccessMessages = /** @class */ (function () {
-    function SuccessMessages() {
-    }
-    SuccessMessages.REGISTER = 'Account created!';
-    SuccessMessages.PROFILE = 'Profile saved!';
-    return SuccessMessages;
-}());
-
-//# sourceMappingURL=constants.js.map
-
-/***/ }),
-
-/***/ 520:
+/***/ 522:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_auth__ = __webpack_require__(89);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_utilities_utilities__ = __webpack_require__(158);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_constants__ = __webpack_require__(514);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_auth__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_utilities_utilities__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_constants__ = __webpack_require__(289);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -208,7 +156,7 @@ var RegisterPage = /** @class */ (function () {
     };
     RegisterPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-register',template:/*ion-inline-start:"/home/brice/source/repos/mapster/src/pages/register/register.html"*/'<!--\n  Generated template for the RegisterPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Registration</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n\n  <ion-list>\n  \n    <ion-item class="item">\n      <ion-label floating>Email</ion-label>\n      <ion-input type="text" class="email" [(ngModel)]="account.email" ></ion-input>\n    </ion-item>\n  \n    <ion-item class="item">\n      <ion-label floating>Password</ion-label>\n      <ion-input type="password" class="password" [(ngModel)]="account.password"></ion-input>\n    </ion-item>\n  \n    <ion-item class="item">\n      <ion-label floating>Verify Password</ion-label>\n      <ion-input type="password" class="password" [(ngModel)]="password" ></ion-input>\n    </ion-item>\n  \n    <button ion-button round (click)="register()" class="submit">\n      Submit\n    </button>\n  \n  </ion-list>\n\n</ion-content>\n'/*ion-inline-end:"/home/brice/source/repos/mapster/src/pages/register/register.html"*/,
+            selector: 'page-register',template:/*ion-inline-start:"/home/brice/source/repos/Mapster/src/pages/register/register.html"*/'<!--\n  Generated template for the RegisterPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Registration</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n\n  <ion-list>\n  \n    <ion-item class="item">\n      <ion-label floating>Email</ion-label>\n      <ion-input type="text" class="email" [(ngModel)]="account.email" ></ion-input>\n    </ion-item>\n  \n    <ion-item class="item">\n      <ion-label floating>Password</ion-label>\n      <ion-input type="password" class="password" [(ngModel)]="account.password"></ion-input>\n    </ion-item>\n  \n    <ion-item class="item">\n      <ion-label floating>Verify Password</ion-label>\n      <ion-input type="password" class="password" [(ngModel)]="password" ></ion-input>\n    </ion-item>\n  \n    <button ion-button round (click)="register()" class="submit">\n      Submit\n    </button>\n  \n  </ion-list>\n\n</ion-content>\n'/*ion-inline-end:"/home/brice/source/repos/Mapster/src/pages/register/register.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__providers_auth_auth__["a" /* AuthProvider */], __WEBPACK_IMPORTED_MODULE_3__providers_utilities_utilities__["a" /* UtilitiesProvider */]])
     ], RegisterPage);

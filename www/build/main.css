@@ -22604,7 +22604,7 @@ ion-navbar.toolbar {
 
 .toolbar-title-md {
   padding: 0 12px;
-  font-size: 2rem;
+  font-size: 1.2em;
   font-weight: 500;
   color: #424242;
 }
@@ -24005,7 +24005,7 @@ ion-navbar.toolbar {
 }
 
 .bar-button-strong-md {
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .toolbar-wp {
@@ -25677,6 +25677,11 @@ ion-navbar.toolbar {
 
 ion-content {
   font-family: 'Roboto' !important;
+}
+
+page-home .bar-buttons,
+page-home .toolbar-title {
+  color: black;
 }
 
 page-intro .slide1 {

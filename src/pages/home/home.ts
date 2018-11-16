@@ -25,7 +25,7 @@ export class HomePage {
   }
 
   public openProfileModal() {
-    let profileModal = this.modal.create(Pages.MODAL_PROFILE);
+    let profileModal = this.modal.create(Pages.PROFILE_MODAL);
     profileModal.present();
   }
 
