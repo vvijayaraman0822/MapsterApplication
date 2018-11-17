@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from 'angularfire2/firestore';
-import {  map } from 'rxjs/operators';
 
 /*
   Generated class for the DataProvider provider.

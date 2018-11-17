@@ -61,11 +61,40 @@
           <key>NSExceptionAllowsInsecureHTTPLoads</key>
           <true/>
         </dict>
+        <key>10.20.24.69</key>
+        <dict>
+          <key>NSExceptionAllowsInsecureHTTPLoads</key>
+          <true/>
+        </dict>
       </dict>
       <key>NSAllowsArbitraryLoads</key>
       <true/>
     </dict>
     <key>UILaunchStoryboardName</key>
     <string>CDVLaunchScreen</string>
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+      <string>googlechromes</string>
+      <string>comgooglemaps</string>
+    </array>
+    <key>Google Maps API Key</key>
+    <string>AIzaSyCO8ryKRAkT2zPwSJLWJQKsQVr-JHSqAYY</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>This app wants to get your location while this app runs only.</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>This app wants to get your location always, even this app runs in background.</string>
+    <key>CFBundleURLTypes</key>
+    <array>
+      <dict>
+        <key>CFBundleTypeRole</key>
+        <string>Editor</string>
+        <key>CFBundleURLName</key>
+        <string>io.ionic.starter</string>
+        <key>CFBundleURLSchemes</key>
+        <array>
+          <string>io.ionic.starter</string>
+        </array>
+      </dict>
+    </array>
   </dict>
 </plist>

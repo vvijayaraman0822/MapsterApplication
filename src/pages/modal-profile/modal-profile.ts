@@ -29,6 +29,7 @@ export class ModalProfilePage {
     this.util.confirmAlert('Logout', 'Are you sure?', async () => {
       await this.auth.logout();
       this.navCtrl.setRoot(Pages.LOGIN_PAGE);
+      this.navCtrl.popToRoot();
     });
   }
 }

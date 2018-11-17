@@ -25679,6 +25679,10 @@ ion-content {
   font-family: 'Roboto' !important;
 }
 
+page-home #map_canvas {
+  height: 100%;
+}
+
 page-intro .slide1 {
   background-color: #95a5a6;
 }
