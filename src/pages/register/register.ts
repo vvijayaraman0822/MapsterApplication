@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController } from 'ionic-angular';
 import { Account } from '../../models/registration/account.interface';
 import { AuthProvider } from '../../providers/auth/auth';
 import { UtilitiesProvider } from '../../providers/utilities/utilities';
-import { TOAST_DURATION, Pages, LoadingMessages, ErrorMessages, SuccessMessages } from '../../utils/constants';
+import { TOAST_DURATION, LoadingMessages, ErrorMessages, SuccessMessages } from '../../utils/constants';
 
 @IonicPage()
 @Component({

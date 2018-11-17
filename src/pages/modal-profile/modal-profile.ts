@@ -1,14 +1,9 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
 import { AuthProvider } from '../../providers/auth/auth';
 import { Pages } from '../../utils/constants';
-
-/**
- * Generated class for the ModalProfilePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { UtilitiesProvider } from '../../providers/utilities/utilities';
+import { Subscription } from 'rxjs';
 
 @IonicPage()
 @Component({
@@ -17,16 +12,24 @@ import { Pages } from '../../utils/constants';
 })
 export class ModalProfilePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public auth: AuthProvider) {
+  friends$: Subscription;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, public auth: AuthProvider, public util: UtilitiesProvider, private view: ViewController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ModalProfilePage');
   }
 
-  logout() {
-    this.auth.logout();
-    this.navCtrl.pop();
-    this.navCtrl.setRoot(Pages.LOGIN_PAGE);
+  close() {
+    this.view.dismiss();
+  }
+
+  logoutConfirm() {
+    this.util.confirmAlert('Logout', 'Are you sure?', async () => {
+      await this.auth.logout();
+      this.navCtrl.setRoot(Pages.LOGIN_PAGE);
+      this.navCtrl.popToRoot();
+    });
   }
 }

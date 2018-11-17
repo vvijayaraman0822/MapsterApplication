@@ -1,13 +1,10 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
-import { User } from '../../models/users/user.interface';
+import { IonicPage, NavController } from 'ionic-angular';
 import { Account } from '../../models/registration/account.interface';
 import { AuthProvider } from '../../providers/auth/auth';
 import { UtilitiesProvider } from '../../providers/utilities/utilities';
 import { TOAST_DURATION, Pages, LoadingMessages, ErrorMessages } from '../../utils/constants';
 import { UserDataProvider } from '../../providers/userData/userData';
-
-
 
 @IonicPage()
 @Component({

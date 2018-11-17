@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
-import { ToastController, LoadingController } from 'ionic-angular';
+import { ToastController, LoadingController, AlertController } from 'ionic-angular';
 
 @Injectable()
 export class UtilitiesProvider {
 
-  constructor(private toast: ToastController, private loading: LoadingController) {
+  constructor(private toast: ToastController, private loading: LoadingController, private alert: AlertController) {
     console.log('Hello UtilitiesProvider Provider');
   }
 
@@ -32,6 +32,28 @@ export class UtilitiesProvider {
         content: message,
         spinner: 'crescent'
       });
-  }    
+  }
+
+  confirmAlert(title: string, message: string, callback: any) {
+    let myAlert =  this.alert.create({
+      title: title,
+      message: message,
+      buttons: [
+        {
+          text: 'Cancel',
+          role: 'cancel',
+          handler: () => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Confirm',
+          handler: callback
+        }
+      ]
+    });
+
+    myAlert.present();
+  }
 
 }
