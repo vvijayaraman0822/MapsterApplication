@@ -25,6 +25,12 @@ export class ModalProfilePage {
     this.view.dismiss();
   }
 
+  friendsClicked() {
+    this.close();
+    this.navCtrl.setRoot(Pages.FRIENDS_PAGE);
+    this.navCtrl.popToRoot();
+  }
+
   logoutConfirm() {
     this.util.confirmAlert('Logout', 'Are you sure?', async () => {
       await this.auth.logout();

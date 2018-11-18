@@ -13,10 +13,10 @@
   </ion-avatar>
 
   <ion-list>
-
+    
     <ion-item class="item">
-      <ion-label floating>Username</ion-label>
-      <ion-input type="text" class="username" [(ngModel)]="profile.userName"></ion-input>
+      <ion-label floating>Profile Picture</ion-label>
+      <ion-input type="text" class="profilepic" [(ngModel)]="profile.profileImage"></ion-input>
     </ion-item>
 
     <ion-item class="item">
@@ -30,9 +30,14 @@
     </ion-item>
 
     <ion-item class="item">
-      <ion-label floating>Profile Picture</ion-label>
-      <ion-input type="text" class="profilepic" [(ngModel)]="profile.profileImage"></ion-input>
+      <ion-label floating>Username</ion-label>
+      <ion-input type="text" class="username" [(ngModel)]="profile.userName"></ion-input>
     </ion-item>
+
+    <ion-item class="item">
+        <ion-label floating>Email Address</ion-label>
+        <ion-input type="text" class="username" [(ngModel)]="profile.email"></ion-input>
+      </ion-item>
 
     <button ion-button round class="save" (click)="saveProfile()">
       Save

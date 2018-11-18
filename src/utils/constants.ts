@@ -4,11 +4,12 @@ export const LOADING_STYLE = 'crescent';
 
 
 export class Pages {
-    public static readonly LOGIN_PAGE: string = 'LoginPage'
-    public static readonly REGISTER_PAGE: string = 'RegisterPage'
-    public static readonly HOME_PAGE: string = 'HomePage'
-    public static readonly PROFILE_PAGE: string = 'ProfilePage'
-    public static readonly MODAL_PROFILE: string = 'ModalProfilePage'
+    public static readonly LOGIN_PAGE: string = 'LoginPage';
+    public static readonly REGISTER_PAGE: string = 'RegisterPage';
+    public static readonly HOME_PAGE: string = 'HomePage';
+    public static readonly PROFILE_PAGE: string = 'ProfilePage';
+    public static readonly FRIENDS_PAGE: string = 'FriendsPage';
+    public static readonly MODAL_PROFILE: string = 'ModalProfilePage';
 }
 
 export class LoadingMessages {

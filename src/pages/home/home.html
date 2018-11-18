@@ -15,9 +15,17 @@
       HomePage
     </ion-title>
 
-    <ion-buttons end>
+    <!-- <ion-item class="profile">
+      <ion-avatar item-end >
+        <img src="/assets/icon/profile_image_placeholder.png">
+      </ion-avatar>
+    </ion-item> -->
+
+    <ion-buttons end class="profile">
       <button ion-button icon-only (click)="openProfileModal()">
-        <ion-icon name="contact"></ion-icon>
+        <ion-icon>
+          <img src="/assets/icon/profile_image_placeholder.svg">
+        </ion-icon>
       </button>
     </ion-buttons>
   </ion-navbar>
@@ -27,6 +35,8 @@
 
 <ion-content>
   <div id="map_canvas">
-    
+    <h2 style="text-align: center">
+      RE-ENABLE MAPS!
+    </h2>
   </div>
 </ion-content>

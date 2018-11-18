@@ -1,7 +1,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-buttons start>
+    <ion-buttons item-start>
       <button ion-button (click)="close()">Close</button>
     </ion-buttons>
   </ion-navbar>
@@ -20,7 +20,7 @@
 
     <ion-item-group>
 
-      <button ion-item>
+      <button ion-item (click)=friendsClicked()>
         <ion-icon color="primary" item-start name="people"></ion-icon>
         Friends
       </button>
