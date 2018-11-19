@@ -17,7 +17,7 @@ https://github.com/briceallard/Mapster/blob/maps/src/app/app.module.ts
 | :------------------------------ | ---: |
 | Resolving Android Studio issues           | 3.0 |
 | Implementing Ionic Native Maps |2.0 |
-| Total                           | 6.0  |
+| Total                           | 5.0  |
 
 ## Description of Sprint
 
