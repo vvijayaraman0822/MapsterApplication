@@ -5,10 +5,10 @@
 
 ## Files Worked On
 
--https://github.com/briceallard/Mapster/blob/maps/src/pages/home/home.ts
--https://github.com/briceallard/Mapster/blob/maps/src/pages/home/home.scss
--https://github.com/briceallard/Mapster/blob/maps/src/pages/home/home.html
--https://github.com/briceallard/Mapster/blob/maps/src/app/app.module.ts
+- https://github.com/briceallard/Mapster/blob/maps/src/pages/home/home.ts
+- https://github.com/briceallard/Mapster/blob/maps/src/pages/home/home.scss
+- https://github.com/briceallard/Mapster/blob/maps/src/pages/home/home.html
+- https://github.com/briceallard/Mapster/blob/maps/src/app/app.module.ts
 
 
 ## Approximate Time Worked
