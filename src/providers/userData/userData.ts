@@ -40,9 +40,7 @@ export class UserDataProvider {
           subscription.unsubscribe();
         });
     });
-    
   }
-
 
   /**
    * Checks if user has a profile

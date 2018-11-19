@@ -5,12 +5,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import { DataProvider } from '../providers/data/data';
 
 import { AngularFireModule } from 'angularfire2';
-import { AngularFireAuthModule } from 'angularfire2/auth'
-import { FIREBASE_CONFIG } from '../firebase-config/app.firebase.config'
-import { AngularFirestoreModule } from 'angularfire2/firestore'
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { FIREBASE_CONFIG } from '../firebase-config/app.firebase.config';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { GoogleMaps } from '@ionic-native/google-maps'
+
+// My Providers
+import { DataProvider } from '../providers/data/data';
 import { UserDataProvider } from '../providers/userData/userData';
 import { AuthProvider } from '../providers/auth/auth';
 import { NetworkProvider } from '../providers/network/network';
@@ -18,7 +22,7 @@ import { MapProvider } from '../providers/map/map';
 import { LocationProvider } from '../providers/location/location';
 import { MessagesProvider } from '../providers/messages/messages';
 import { UtilitiesProvider } from '../providers/utilities/utilities';
-import { Geolocation } from '@ionic-native/geolocation';
+import { FriendsProvider } from '../providers/friends/friends';
 
 import {GoogleMaps} from '@ionic-native/google-maps';
 @NgModule({
@@ -51,7 +55,9 @@ import {GoogleMaps} from '@ionic-native/google-maps';
     LocationProvider,
     MessagesProvider,
     UtilitiesProvider,
-    Geolocation
+    BrowserAnimationsModule,
+    GoogleMaps,
+    FriendsProvider
   ]
 })
 

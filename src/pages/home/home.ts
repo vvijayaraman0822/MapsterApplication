@@ -1,11 +1,16 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
+import { Pages } from '../../utils/constants';
+
 import {
   GoogleMaps,
   GoogleMap,
-  GoogleMapOptions,
   GoogleMapsEvent,
+  GoogleMapOptions,
+  CameraPosition,
+  MarkerOptions,
   Marker,
+  Environment
 } from '@ionic-native/google-maps';
 /**
  * Generated class for the HomePage page.
@@ -21,12 +26,33 @@ import {
 })
 export class HomePage {
   map: GoogleMap;
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, public modal: ModalController) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad HomePage');
-    this.loadMap();
+    // this.loadMap();
+  }
+
+  loadMap() {
+
+    Environment.setEnv({
+      'API_KEY_FOR_BROWSER_RELEASE': 'AIzaSyCO8ryKRAkT2zPwSJLWJQKsQVr-JHSqAYY',
+      'API_KEY_FOR_BROWSER_DEBUG': 'AIzaSyCO8ryKRAkT2zPwSJLWJQKsQVr-JHSqAYY'
+    });
+
+    let mapOptions: GoogleMapOptions = {
+      camera: {
+         target: {
+           lat: 38.8979,
+           lng: -77.0365
+         },
+         zoom: 18,
+         tilt: 0
+       }
+    };
+
+    this.map = GoogleMaps.create('map_canvas', mapOptions);
   }
 
   loadMap() {
@@ -58,6 +84,6 @@ export class HomePage {
     marker.on(GoogleMapsEvent.MARKER_CLICK).subscribe(() => {
       alert('Message');
     });
-
   }
+  
 }
