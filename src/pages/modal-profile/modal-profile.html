@@ -11,7 +11,7 @@
 
 <ion-content padding>
 
-  <ion-list>
+  <ion-list class="list">
 
     <ion-list-header>
       Profile
@@ -44,7 +44,7 @@
 
     <ion-item-group>
 
-      <button ion-item>
+      <button ion-item (click)=profileClicked()>
         <ion-icon color="primary" item-start name="contact"></ion-icon>
         Edit Profile
       </button>

@@ -33,7 +33,7 @@ export class HomePage {
   }
 
   ionViewDidLoad() {
-    //this.loadMap();
+    this.loadMap();
   }
 
   loadMap() {

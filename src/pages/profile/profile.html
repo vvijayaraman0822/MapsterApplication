@@ -9,11 +9,11 @@
 <ion-content padding>
 
   <ion-avatar>
-    <img  src="../../assets/imgs/logo.png"  *ngIf=""/>
+    <img src="../../assets/imgs/logo.png" *ngIf="" />
   </ion-avatar>
 
   <ion-list>
-    
+
     <ion-item class="item">
       <ion-label floating>Profile Picture</ion-label>
       <ion-input type="text" class="profilepic" [(ngModel)]="profile.profileImage"></ion-input>
@@ -21,7 +21,7 @@
 
     <ion-item class="item">
       <ion-label floating>First Name</ion-label>
-      <ion-input type="text" class="firstname"[(ngModel)]="profile.firstName"></ion-input>
+      <ion-input type="text" class="firstname" [(ngModel)]="profile.firstName"></ion-input>
     </ion-item>
 
     <ion-item class="item">
@@ -35,9 +35,9 @@
     </ion-item>
 
     <ion-item class="item">
-        <ion-label floating>Email Address</ion-label>
-        <ion-input type="text" class="username" [(ngModel)]="profile.email"></ion-input>
-      </ion-item>
+      <ion-label floating>Email Address</ion-label>
+      <ion-input type="text" class="username" [(ngModel)]="profile.email"></ion-input>
+    </ion-item>
 
     <button ion-button round class="save" (click)="saveProfile()">
       Save

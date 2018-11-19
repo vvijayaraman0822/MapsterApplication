@@ -1,16 +1,13 @@
 page-home {
 
-    .profile {
-        background: transparent;
-    }
+  .profile img {
+    height: 30px;
+    width: auto;
+    margin-right: 5px;
+    background: transparent;
+  }
 
-    .profile img{
-        height: 30px;
-        width: auto;
-        margin-right: 5px;
-    }
-    
-    #map_canvas {
-        height: 100%;
-    }
+  #map_canvas {
+    height: 100%;
+  }
 }
