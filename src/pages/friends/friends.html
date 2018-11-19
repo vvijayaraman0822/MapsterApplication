@@ -14,6 +14,11 @@
       <ion-title>
         Friends
       </ion-title>
+      <ion-buttons end>
+        <button ion-button icon-only (click)="addFriendClicked()">
+          <ion-icon name="person-add"></ion-icon>
+        </button>
+      </ion-buttons>
   
       <!-- <ion-item class="profile">
         <ion-avatar item-end >
@@ -21,13 +26,6 @@
         </ion-avatar>
       </ion-item> -->
   
-      <ion-buttons end class="profile">
-        <button ion-button icon-only (click)="openProfileModal()">
-          <ion-icon>
-            <img src="/assets/icon/profile_image_placeholder.svg">
-          </ion-icon>
-        </button>
-      </ion-buttons>
     </ion-navbar>
   
   </ion-header>

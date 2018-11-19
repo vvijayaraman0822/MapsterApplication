@@ -1,23 +1,29 @@
 <ion-header>
-
   <ion-navbar>
-    <ion-title>ProfilePage</ion-title>
+    <ion-title>My Profile</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 <ion-content padding>
 
-  <ion-avatar>
-    <img src="../../assets/imgs/logo.png" *ngIf="" />
-  </ion-avatar>
+  <div align="center" class="profile">
+    <img class="profile-image" src="assets/icon/profile_image_placeholder.svg">
+
+    <div>
+    <button small ion-button outline round icon-start>
+      <ion-icon name="camera"></ion-icon>
+      Take Picture
+    </button>
+    <button small ion-button outline round icon-start>
+      <ion-icon name="image"></ion-icon>
+      Edit Picture
+    </button>
+  </div>
+
+  </div>
 
   <ion-list>
-
-    <ion-item class="item">
-      <ion-label floating>Profile Picture</ion-label>
-      <ion-input type="text" class="profilepic" [(ngModel)]="profile.profileImage"></ion-input>
-    </ion-item>
 
     <ion-item class="item">
       <ion-label floating>First Name</ion-label>
@@ -39,9 +45,11 @@
       <ion-input type="text" class="username" [(ngModel)]="profile.email"></ion-input>
     </ion-item>
 
-    <button ion-button round class="save" (click)="saveProfile()">
-      Save
-    </button>
+    <div class="save" align="center">
+      <button ion-button round (click)="saveProfile()">
+        Save
+      </button>
+    </div>
 
   </ion-list>
 

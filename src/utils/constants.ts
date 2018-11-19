@@ -9,6 +9,7 @@ export class Pages {
     public static readonly HOME_PAGE: string = 'HomePage';
     public static readonly PROFILE_PAGE: string = 'ProfilePage';
     public static readonly FRIENDS_PAGE: string = 'FriendsPage';
+    public static readonly FRIEND_SEARCH_PAGE: string = 'FriendSearchPage';
     public static readonly MODAL_PROFILE: string = 'ModalProfilePage';
 }
 

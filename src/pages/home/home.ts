@@ -13,7 +13,6 @@ import {
   Environment
 } from '@ionic-native/google-maps';
 
-
 /**
  * Generated class for the HomePage page.
  *
@@ -46,11 +45,11 @@ export class HomePage {
     let mapOptions: GoogleMapOptions = {
       camera: {
          target: {
-           lat: 43.0741904,
-           lng: -89.3809802
+           lat: 38.8979,
+           lng: -77.0365
          },
          zoom: 18,
-         tilt: 30
+         tilt: 0
        }
     };
 

@@ -26,13 +26,10 @@ export class ModalProfilePage {
   }
 
   friendsClicked() {
-    this.close();
-    this.navCtrl.setRoot(Pages.FRIENDS_PAGE);
-    this.navCtrl.popToRoot();
+    this.navCtrl.push(Pages.FRIENDS_PAGE);
   }
 
   profileClicked() {
-    this.close();
     this.navCtrl.push(Pages.PROFILE_PAGE);
   }
 

@@ -28,4 +28,8 @@ export class FriendsPage {
     profileModal.present();
   }
 
+  addFriendClicked() {
+    this.navCtrl.push(Pages.FRIEND_SEARCH_PAGE);
+  }
+
 }
