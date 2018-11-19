@@ -24,6 +24,7 @@ import { MessagesProvider } from '../providers/messages/messages';
 import { UtilitiesProvider } from '../providers/utilities/utilities';
 import { FriendsProvider } from '../providers/friends/friends';
 
+import {GoogleMaps} from '@ionic-native/google-maps';
 @NgModule({
   declarations: [
     MyApp,
@@ -34,7 +35,8 @@ import { FriendsProvider } from '../providers/friends/friends';
     AngularFireModule.initializeApp(FIREBASE_CONFIG),
     AngularFireAuthModule,
     AngularFirestoreModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    IonicStorageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -43,6 +45,7 @@ import { FriendsProvider } from '../providers/friends/friends';
   providers: [
     StatusBar,
     SplashScreen,
+    GoogleMaps,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     DataProvider,
     UserDataProvider,

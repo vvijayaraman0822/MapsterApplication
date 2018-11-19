@@ -17,6 +17,7 @@ export class LoadingMessages {
     public static readonly LOGIN: string = 'Logging in...';
     public static readonly REGISTER: string = 'Creating account...';
     public static readonly PROFILE: string = 'Saving profile...';
+    public static readonly LOADING: string = 'Loading...';
 }
 
 export class ErrorMessages {
