@@ -21,6 +21,6 @@ https://github.com/briceallard/Mapster/blob/maps/src/app/app.module.ts
 
 ## Description of Sprint
 
-I spent majority of the time trying to get the app to run on the android device. The problem was with the way the build.gradle and the app file were
-formatted. I then had to learn how to load a map the Ionic Native maps. I had get a a specific API key if I wanted the map to display on an android/ios
+I spent majority of the time trying to get the app to run on an android device. The problem was with the way the build.gradle and the app file were
+formatted. I then had to learn how to load the Ionic Native maps. I had get a a specific API key if I wanted the map to display on an android/ios
 device. Once I was able to get the app to load on my phone Buddy and I spent some time coding together over VS Share.
