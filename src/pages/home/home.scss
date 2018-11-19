@@ -7,7 +7,20 @@ page-home {
     background: transparent;
   }
 
+  .grid {
+    padding: 0px;
+  }
+
+  .grid button {
+    height: 50px;
+  }
+
   #map_canvas {
     height: 100%;
+  }
+
+  ion-fab {
+    margin-right: 15px;
+    margin-bottom: 15px;
   }
 }
