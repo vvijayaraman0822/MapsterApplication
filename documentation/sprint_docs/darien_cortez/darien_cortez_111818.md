@@ -6,9 +6,8 @@
 ## Files Worked On
 
 
-- These are the files we were supposed to work on but ran into many errors in the process
-- These are Brice's pages.. I didn't want to take credit for Brice's work
-- We made a few 
+These are the files we were supposed to work on but ran into many errors in the process
+These are Brice's pages.. I didn't want to take credit for Brice's work
 
 
 - https://github.com/briceallard/Mapster/blob/uiux-menu/src/pages/intro/intro.scss
