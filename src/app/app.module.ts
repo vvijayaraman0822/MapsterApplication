@@ -24,7 +24,6 @@ import { MessagesProvider } from '../providers/messages/messages';
 import { UtilitiesProvider } from '../providers/utilities/utilities';
 import { FriendsProvider } from '../providers/friends/friends';
 
-import {GoogleMaps} from '@ionic-native/google-maps';
 @NgModule({
   declarations: [
     MyApp,
@@ -35,8 +34,7 @@ import {GoogleMaps} from '@ionic-native/google-maps';
     AngularFireModule.initializeApp(FIREBASE_CONFIG),
     AngularFireAuthModule,
     AngularFirestoreModule,
-    BrowserAnimationsModule,
-    IonicStorageModule
+    BrowserAnimationsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
