@@ -2,7 +2,10 @@
 ### Name: Vasudev Vijayaraman
 ### Date: 11/27/18
 
-## Files Worked On None
+## Files Worked On
+https://github.com/briceallard/Mapster/tree/development/resources/ios files in folder
+https://github.com/briceallard/Mapster/blob/development/pods-debug.xcconfig auto generated with commands
+https://github.com/briceallard/Mapster/blob/development/pods-release.xcconfig auto generated with commands
 
 ## Approximate Time Worked
 
