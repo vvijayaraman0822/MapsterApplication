@@ -5,9 +5,9 @@
 
 ## Files Worked On
 
-https://github.com/briceallard/Mapster/blob/ui-darien/src/app/app.component.ts
-https://github.com/briceallard/Mapster/blob/ui-darien/src/app/app.module.ts
-https://github.com/briceallard/Mapster/blob/ui-darien/src/pages/login/login.scss
+-https://github.com/briceallard/Mapster/blob/ui-darien/src/app/app.component.ts
+-https://github.com/briceallard/Mapster/blob/ui-darien/src/app/app.module.ts
+-https://github.com/briceallard/Mapster/blob/ui-darien/src/pages/login/login.scss
 
 ## Approximate Time Worked
 
