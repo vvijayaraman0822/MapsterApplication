@@ -5,9 +5,9 @@
 
 ## Files Worked On
 
-https://github.com/briceallard/Mapster/blob/uiux-menu/src/app/app.module.ts
-https://github.com/briceallard/Mapster/blob/uiux-menu/src/app/app.component.ts
-firebase files were ignored
+- https://github.com/briceallard/Mapster/blob/uiux-menu/src/app/app.module.ts
+- https://github.com/briceallard/Mapster/blob/uiux-menu/src/app/app.component.ts
+- firebase files were ignored
 
 ## Approximate Time Worked
 
