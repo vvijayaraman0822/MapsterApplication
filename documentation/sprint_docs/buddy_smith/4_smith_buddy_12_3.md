@@ -6,6 +6,8 @@
 ## Files Worked On
 
 - https://github.com/yourrepo/src/pages/home/home.ts
+- https://github.com/briceallard/Mapster/blob/maps/src/pages/home/home.scss
+- https://github.com/briceallard/Mapster/blob/maps/src/pages/home/home.html
 
 
 
