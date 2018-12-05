@@ -17,4 +17,4 @@
 ## Description of Sprint
 
 I worked on adding automatic location centering to the app. I have been unable to get the app to work on my end.
-Brice helped debug over teamview. I'm going to try and work more tomorrow. Once working, ill push to our branch.
+Brice helped debug over teamview. I'm going to try and work more tomorrow on Markers and Geofencing.. Once working, ill push to our branch.
