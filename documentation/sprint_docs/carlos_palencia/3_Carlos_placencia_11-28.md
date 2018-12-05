@@ -19,4 +19,4 @@ https://github.com/briceallard/Mapster/blob/development/src/pages/home/home.ts
 ## Description of Sprint
 
 The maps team got together with Brice to display all users in the map. Had difficulties accessing the users information from the databse.
-I also worked on trying to get a custom pin markers to display on the map but wasn't successful.
+I also worked on trying to get a custom pin markers to display on the map but wasn't successful. In the end we ended up using the user's profile picture as a marker.
