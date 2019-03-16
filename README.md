@@ -1,5 +1,4 @@
-# Mapster Documentation
-<img src="https://bricewa.me/resources/img/logo/mapster/logo.png" width="250">
+# Mapster Documentation (Group Project)
 
 ## Description
 #### Application Purpose
@@ -28,6 +27,7 @@ Travis Rowe - https://github.com/Travisrowe
 Drew Smith - https://github.com/buddyjasmith  
 Vasudev Vijayaraman - https://github.com/vvijayaraman0822  
 Brett Workman - https://github.com/BMWorkman  
+
 ### Individual Project Group
 **Camera:** Zac Conley, Vasudev Vijayaraman  
 **Maps:** Carlos Placencia, Drew Smith  
@@ -41,7 +41,6 @@ Brett Workman - https://github.com/BMWorkman
 Firebase is a platform that makes developing apps easier. it is owned by Google and is easy to Integrate to your project. It combines Analytics, Database, Authentication, Storage, Hosting, Crash Reports, AdMob etc.
 
 #### Design
-<img src="https://bricewa.me/resources/img/photo/mapster-db-diagram.svg">
 
 ## IOS Build Commands
 ```
