@@ -18,6 +18,7 @@ Mapster is a social networking application that allows users to share their loca
 Brice Allard - https://github.com/briceallard  
 ### Team Members
 Vasudev Vijayaraman - https://github.com/vvijayaraman0822 
+
 Zac Conley - https://github.com/acdczlc  
 Darien Cortez - https://github.com/dcortez0817  
 William Divine - https://github.com/mack2great  
